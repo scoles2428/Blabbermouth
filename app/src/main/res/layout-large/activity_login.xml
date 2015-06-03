@@ -1,0 +1,81 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="samcoles.blabbermouth.samcoles.blabbermouth.ui.LoginActivity"
+    style="@style/AuthBackground">
+
+    <ImageView
+        android:id="@+id/backgroundImage"
+        style="@style/AuthBackgroundImage"
+        android:contentDescription="@string/content_desc_background"
+        />
+
+    <TextView
+        android:id="@+id/title"
+        style="@style/AuthTitle"
+        android:layout_marginTop="180dp"
+        />
+
+    <TextView
+        android:id="@+id/subtitle"
+        style="@style/AuthTitle.AuthSubtitle"
+        />
+
+    <LinearLayout
+        android:id="@+id/editTextLayout"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@id/subtitle"
+        android:layout_marginTop="@dimen/login_vertical_margin"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        android:paddingLeft="@dimen/login_horizontal_padding"
+        android:paddingRight="@dimen/login_horizontal_padding"
+        android:paddingTop="@dimen/login_vertical_padding"
+        android:paddingBottom="@dimen/login_vertical_padding"
+        android:background="@android:color/white">
+
+
+        <EditText
+            android:id="@+id/usernameField"
+            style="@style/AuthEditText"
+            android:hint="@string/username_field">
+
+            <requestFocus />
+
+        </EditText>
+
+        <EditText
+            android:id="@+id/passwordField"
+            style="@style/AuthEditText"
+            android:inputType="textPassword"
+            android:hint="@string/password_field"
+         />
+
+    </LinearLayout>
+
+    <Button
+        android:id="@+id/loginButton"
+        android:text="@string/login_button_label"
+        style="@style/AuthButton"
+        android:layout_below="@+id/editTextLayout"
+        android:layout_width="400dp"
+        android:layout_centerHorizontal="true"
+
+
+        />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="@string/sign_up_text"
+        android:id="@+id/signUpText"
+        android:layout_centerHorizontal="true"
+        android:layout_below="@id/loginButton"
+        android:layout_marginTop="12sp"
+        android:textColor="@android:color/white"/>
+
+</RelativeLayout>
